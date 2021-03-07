@@ -6,17 +6,13 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>install Cuda 9.0/8.0 On Ubuntu18.04 | Hexo</title>
+  <title>Archives: 2021/3 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Ubuntu 18.04 install CUDA9.0 &amp; pytorch0.3.1注意cuda的安装需要适配的gcc、g++，如：  CUDA8.0 ，gcc 4.8， g++4.8 CUDA9.0 ，gcc 6.5， g++6.5  1 检查gcc及g++版本Input 1 1gcc --version  Output 1 1234gcc (Ubuntu 6.5.0-2ubuntu1">
-<meta property="og:type" content="article">
-<meta property="og:title" content="install Cuda 9.0&#x2F;8.0 On Ubuntu18.04">
-<meta property="og:url" content="http://example.com/2020/10/23/cuda9.0or8.0withUbuntu18-04/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/archives/2021/03/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Ubuntu 18.04 install CUDA9.0 &amp; pytorch0.3.1注意cuda的安装需要适配的gcc、g++，如：  CUDA8.0 ，gcc 4.8， g++4.8 CUDA9.0 ，gcc 6.5， g++6.5  1 检查gcc及g++版本Input 1 1gcc --version  Output 1 1234gcc (Ubuntu 6.5.0-2ubuntu1">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-10-23T09:31:58.000Z">
-<meta property="article:modified_time" content="2020-10-23T09:37:26.536Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -154,230 +150,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-cuda9.0or8.0withUbuntu18-04" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      install Cuda 9.0/8.0 On Ubuntu18.04
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2021" class="archive-year">2021</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2021/03/07/Typora-Latex-Grammer/" class="archive-article-date">
+  	<time datetime="2021-03-07T06:40:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-07</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2021/03/07/Typora-Latex-Grammer/">Typora_Latex_Grammer</a>
     </h1>
   
 
-        
-        <a href="/2020/10/23/cuda9.0or8.0withUbuntu18-04/" class="archive-article-date">
-  	<time datetime="2020-10-23T09:31:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Ubuntu-18-04-install-CUDA9-0-amp-pytorch0-3-1"><a href="#Ubuntu-18-04-install-CUDA9-0-amp-pytorch0-3-1" class="headerlink" title="Ubuntu 18.04 install CUDA9.0 &amp; pytorch0.3.1"></a>Ubuntu 18.04 install CUDA9.0 &amp; pytorch0.3.1</h1><p><strong>注意</strong>cuda的安装需要适配的gcc、g++，如：</p>
-<ul>
-<li>CUDA8.0 ，gcc 4.8， g++4.8</li>
-<li>CUDA9.0 ，gcc 6.5， g++6.5</li>
-</ul>
-<h3 id="1-检查gcc及g-版本"><a href="#1-检查gcc及g-版本" class="headerlink" title="1 检查gcc及g++版本"></a>1 检查gcc及g++版本</h3><p>Input 1</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc --version</span><br></pre></td></tr></table></figure>
+        <div class="article-info info-on-right">
+          
+          
 
-<p>Output 1</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">gcc (Ubuntu 6.5.0-2ubuntu1~18.04) 6.5.0 20181026</span><br><span class="line">Copyright (C) 2017 Free Software Foundation, Inc.</span><br><span class="line">This is free software; see the source for copying conditions.  There is NO</span><br><span class="line">warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</span><br></pre></td></tr></table></figure>
-
-<p>Input 2</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">g++ --version</span><br></pre></td></tr></table></figure>
-
-<p>Output 2</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Copyright (C) 2017 Free Software Foundation, Inc.</span><br><span class="line">This is free software; see the source for copying conditions.  There is NO</span><br><span class="line">warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-ubuntu-安装多版本gcc-、g"><a href="#2-ubuntu-安装多版本gcc-、g" class="headerlink" title="2 ubuntu 安装多版本gcc 、g++"></a>2 ubuntu 安装多版本gcc 、g++</h3><h4 id="Step-0-查看路径下是否存在多版本的gcc-g"><a href="#Step-0-查看路径下是否存在多版本的gcc-g" class="headerlink" title="Step 0 查看路径下是否存在多版本的gcc/g++:"></a>Step 0 查看路径下是否存在多版本的gcc/g++:</h4><p>Input:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ls /usr/bin/gcc*</span><br><span class="line">ls /usr/bin/g++*</span><br></pre></td></tr></table></figure>
-
-<p>若存在多版本，Output :</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/gcc    /usr/bin/gcc-7 /usr/bin/gcc-5</span><br></pre></td></tr></table></figure>
-
-<h4 id="Step-1-添加-the-ubuntu-toolchain-r-test-PPA-到系统"><a href="#Step-1-添加-the-ubuntu-toolchain-r-test-PPA-到系统" class="headerlink" title="Step 1 添加 the ubuntu-toolchain-r/test PPA 到系统:"></a>Step 1 添加 the <code>ubuntu-toolchain-r/test</code> PPA 到系统:</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install software-properties-common</span><br><span class="line">sudo add-apt-repository ppa:ubuntu-toolchain-r/test</span><br></pre></td></tr></table></figure>
-
-<h4 id="Step-2-安装所需的多版本gcc-和-g"><a href="#Step-2-安装所需的多版本gcc-和-g" class="headerlink" title="Step 2 安装所需的多版本gcc 和 g++"></a>Step 2 安装所需的多版本gcc 和 g++</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install gcc-5 g++-5 gcc-6 g++-6 gcc-7 g++-7</span><br></pre></td></tr></table></figure>
-
-<h4 id="Step-3-为每个版本配置替代版本，并设置优先级："><a href="#Step-3-为每个版本配置替代版本，并设置优先级：" class="headerlink" title="Step 3 为每个版本配置替代版本，并设置优先级："></a>Step 3 为每个版本配置替代版本，并设置优先级：</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> update-alternatives --install  + 多版本命令在系统中的进入地址 +  在update-alternatives中的注册名称+  实际可执行命令的物理地址 +   （自动模式下的优先级数字）</span></span><br><span class="line">sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 50</span><br><span class="line">sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 50</span><br><span class="line">sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 50</span><br><span class="line">sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-6 50</span><br><span class="line">sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 50</span><br><span class="line">sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 50</span><br></pre></td></tr></table></figure>
-
-<h4 id="Step-4-更改默认版本"><a href="#Step-4-更改默认版本" class="headerlink" title="Step 4 更改默认版本"></a>Step 4 更改默认版本</h4><p>分别查看gcc 、g++可供使用的版本，输入gcc-6.0与g++-6.0相应数字，即可更改默认版本。 </p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo update-alternatives --config gcc</span><br><span class="line"><span class="meta">#</span><span class="bash"> Output</span></span><br><span class="line">  0            /usr/bin/gcc-6   50        auto mode</span><br><span class="line">  1            /usr/bin/gcc-5   50        manual mode</span><br><span class="line">* 2            /usr/bin/gcc-6   50        manual mode</span><br><span class="line">  3            /usr/bin/gcc-7   50        manual mode</span><br><span class="line">Press &lt;enter&gt; to keep the current choice[*], or type selection number:</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">sudo update-alternatives --config g++</span><br><span class="line"><span class="meta">#</span><span class="bash">Output</span></span><br><span class="line">  Selection    Path            Priority   Status</span><br><span class="line">------------------------------------------------------------</span><br><span class="line">  0            /usr/bin/g++-6   50        auto mode</span><br><span class="line">  1            /usr/bin/g++-5   50        manual mode</span><br><span class="line">* 2            /usr/bin/g++-6   50        manual mode</span><br><span class="line">  3            /usr/bin/g++-7   50        manual mode</span><br><span class="line"></span><br><span class="line">Press &lt;enter&gt; to keep the current choice[*], or type selection number: </span><br></pre></td></tr></table></figure>
-
-<h3 id="3-ubuntu-18-04-安装cuda9-0"><a href="#3-ubuntu-18-04-安装cuda9-0" class="headerlink" title="3 ubuntu 18.04 安装cuda9.0"></a>3 ubuntu 18.04 安装cuda9.0</h3><h4 id="Step-1-获得ppa-repository-driver"><a href="#Step-1-获得ppa-repository-driver" class="headerlink" title="Step 1 获得ppa repository driver"></a>Step 1 获得ppa repository driver</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:graphics-drivers/ppa</span><br></pre></td></tr></table></figure>
-
-<h4 id="step-2-安装其他依赖包"><a href="#step-2-安装其他依赖包" class="headerlink" title="step 2 安装其他依赖包"></a>step 2 安装其他依赖包</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev</span><br></pre></td></tr></table></figure>
-
-<h4 id="Step-3-检查gcc-与g-的版本，均为6"><a href="#Step-3-检查gcc-与g-的版本，均为6" class="headerlink" title="Step 3 检查gcc 与g++的版本，均为6"></a>Step 3 检查gcc 与g++的版本，均为6</h4><h4 id="Step-4-下载cuda9-0-toolkit-archive-的run文件"><a href="#Step-4-下载cuda9-0-toolkit-archive-的run文件" class="headerlink" title="Step 4 下载cuda9.0 toolkit archive 的run文件"></a>Step 4 下载cuda9.0 toolkit archive 的run文件</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.0.176_384.81_linux-run</span><br></pre></td></tr></table></figure>
-
-<h4 id="Step-5-使run文件可执行"><a href="#Step-5-使run文件可执行" class="headerlink" title="Step 5 使run文件可执行"></a>Step 5 使run文件可执行</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod +x cuda_9.0.176_384.81_linux-run </span><br><span class="line">sudo ./cuda_9.0.176_384.81_linux-run --override</span><br></pre></td></tr></table></figure>
-
-<h4 id="Step-6-安装cudatoolkit9-0"><a href="#Step-6-安装cudatoolkit9-0" class="headerlink" title="Step 6 安装cudatoolkit9.0"></a>Step 6 安装cudatoolkit9.0</h4><p>回答对应问题</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> You are attempting to install on an unsupported configuration. Do you wish to <span class="built_in">continue</span>? y</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Install NVIDIA Accelerated Graphics Driver <span class="keyword">for</span> Linux-x86_64 384.81? n</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Install the CUDA 9.0 Toolkit? y</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="Step-7-更改bashrc"><a href="#Step-7-更改bashrc" class="headerlink" title="Step 7 更改bashrc"></a>Step 7 更改bashrc</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.bashrc</span><br></pre></td></tr></table></figure>
-
-<p>在vim打开的文件中写入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export PATH&#x3D;&quot;$PATH:&#x2F;usr&#x2F;local&#x2F;cuda&#x2F;bin&quot;</span><br><span class="line">export LD_LIBRARY_PATH&#x3D;&quot;$LD_LIBRARY_PATH:&#x2F;usr&#x2F;local&#x2F;cuda&#x2F;lib64&#x2F;&quot;</span><br><span class="line">export LIBRARY_PATH&#x3D;&quot;$LIBRARY_PATH:&#x2F;usr&#x2F;local&#x2F;cuda&#x2F;lib64&quot;</span><br></pre></td></tr></table></figure>
-
-<p>使文件更改生效：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.bashrc</span><br></pre></td></tr></table></figure>
-
-<p>查看当前使用的cuda版本：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvcc --version</span><br></pre></td></tr></table></figure>
-
-<h4 id="Step-8-安装cudnn"><a href="#Step-8-安装cudnn" class="headerlink" title="Step 8 安装cudnn"></a>Step 8 安装cudnn</h4><p>需自行下载相适配的cudnn，下载地址：<a target="_blank" rel="noopener" href="https://developer.nvidia.com/rdp/cudnn-archive">https://developer.nvidia.com/rdp/cudnn-archive</a></p>
-<p>如选择：cuDNN v7.0.5 Library for Linux</p>
-<p>解压 .tgz文件：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxf xxx.tgz</span><br></pre></td></tr></table></figure>
-
-<p>将解压所得cuda文件夹下的文件复制到cuda相应的目录，更改权限即可。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo cp cuda/include/cudnn.h /usr/local/cuda/include/</span><br><span class="line">sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64/</span><br><span class="line">sudo chmod a+r /usr/local/cuda/include/cudnn.h</span><br><span class="line">sudo chmod a+r /usr/local/cuda/lib64/libcudnn*</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-使用软连接，切换cuda版本"><a href="#4-使用软连接，切换cuda版本" class="headerlink" title="4 使用软连接，切换cuda版本"></a>4 使用软连接，切换cuda版本</h3><p>因bashrc中未指定版本，故可使用软连接的方式来切换版本：</p>
-<h4 id="Step-1-查看已安装的cuda版本"><a href="#Step-1-查看已安装的cuda版本" class="headerlink" title="Step 1 查看已安装的cuda版本"></a>Step 1 查看已安装的cuda版本</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -l /usr/local | grep cuda</span><br></pre></td></tr></table></figure>
-
-<h4 id="Step-2-使用软链接切换cuda版本"><a href="#Step-2-使用软链接切换cuda版本" class="headerlink" title="Step 2 使用软链接切换cuda版本"></a>Step 2 使用软链接切换cuda版本</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf cuda</span><br><span class="line">sudo ln -s /usr/local/cuda-9.1 /usr/local/cuda</span><br></pre></td></tr></table></figure>
-
-
-
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/10/23/cuda9.0or8.0withUbuntu18-04/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2021/03/07/Typora-Latex-Grammer/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Typora_Latex_Grammer
-        
-      </div>
-    </a>
   
   
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -400,8 +215,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
