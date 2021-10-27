@@ -136,6 +136,84 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-VATIS01-paper-share-md" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/10/27/VATIS01-paper-share-md/">VATIS01_paper_share.md</a>
+    </h1>
+  
+
+        
+        <a href="/2021/10/27/VATIS01-paper-share-md/" class="archive-article-date">
+  	<time datetime="2021-10-27T01:56:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><em>Update from time to time.  –  Cam</em></p>
+<h3 id="1-Transformer"><a href="#1-Transformer" class="headerlink" title="1 Transformer"></a>1 Transformer</h3><p>[1] SOFT: Softmax-free Transformer with Linear Complexity</p>
+<ul>
+<li><p>Project Homepage: <a target="_blank" rel="noopener" href="https://fudan-zvg.github.io/SOFT/">https://fudan-zvg.github.io/SOFT/</a></p>
+</li>
+<li><p>Paper : <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2110.11945.pdf">https://arxiv.org/pdf/2110.11945.pdf</a></p>
+</li>
+<li><p>Github:<a target="_blank" rel="noopener" href="https://fudan-zvg.github.io/SOFT/">https://fudan-zvg.github.io/SOFT/</a></p>
+</li>
+<li><p>Abstract: </p>
+<p>ViT通过图像块序列化+自注意力机制将不同CV任务性能往前推了一把。然而，自注意力机制会带来更高的计算复杂度与内存占用。在NLP领域已有不同的方案尝试采用线性复杂度对自注意力进行近似。然而，本文的深入分析表明：NLP中的近似方案在CV中缺乏理论支撑或者无效。</p>
+<p>我们进一步分析了其局限性根因：<strong>softmax self-attention</strong> 。具体来说，传统自注意力通过计算token之间的点乘并归一化得到自注意力。softmax操作会对后续的线性近似带来极大挑战。基于该发现，本文首次提出了SOFT(<strong>softmax-free transformer</strong> )。</p>
+<p>为移除自注意力中的softmax，我们采用高斯核函数替代点乘相似性且无需进一步的归一化。这就使得<strong>自注意力矩阵可以通过低秩矩阵分析近似</strong> 。近似的鲁棒性可以通过计算其MP逆(Moore-Penrose Inverse)得到。</p>
+<p>ImageNet数据集上的实验结果表明：<strong>所提SOFT显著改善了现有ViT方案的计算效率</strong> 。更为关键的是：SOFT的线性复杂度可以允许更长的token序列，进而取得更佳的精度-复杂度均衡。</p>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/10/27/VATIS01-paper-share-md/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-VScode-SSH-Precautions" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
